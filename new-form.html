@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <style>
+    .error{
+       border: 2px solid red;
+    }
+    .success{
+        border: 2px solid yellow;
+    }
+     .hide{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <form id="form1" name="form" class="form-horizontal">
+        <div class="form-group">
+            <label for="field1" class="col-sm-1 control-label">Name: </label>
+                <div class="col-sm-4">
+                   <p> <input type="text" id="field1" class="form-control" placeholder="Name">
+                    <span id="alrt1" class="hide">Name is required</span></p>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field2" class="col-sm-1 control-label">Email: </label>
+                <div class="col-sm-4">
+                   <p> <input type="text" id="field2" class="form-control " placeholder="Email">
+                    <span id="alrt2" class="hide">Name is required</span></p>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field3" class="col-sm-1 control-label">Contact: </label>
+                <div class="col-sm-4">
+                    <p><input type="number" id="field3" class="form-control " placeholder="Contact">
+                    <span id="alrt3" class="hide">Name is required</span></p>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field4" class="col-sm-1 control-label">Address: </label>
+                <div class="col-sm-4">
+                    <p><input type="text" id="field4" class="form-control " placeholder="Address">
+                    <span id="alrt4" class="hide">Name is required</span></p>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field5" class="col-sm-1 control-label">Country: </label>
+            <div class="col-sm-4">
+                <p><input type="text" id="field5" class="form-control " placeholder="Country">
+                <span id="alrt5" class="hide">Name is required</span></p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field6" class="col-sm-1 control-label">Zip: </label>
+            <div class="col-sm-4">
+                <p><input type="number" id="field6" class="form-control " placeholder="Zip">
+                <span id="alrt6" class="hide">Name is required</span></p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field7" class="col-sm-1 control-label">Age: </label>
+            <div class="col-sm-4">
+                <p><input type="number" id="field7" class="form-control " placeholder="Age">
+                <span id="alrt7" class="hide">Name is required</span></p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field8" class="col-sm-1 control-label">Qualification: </label>
+            <div class="col-sm-4">
+                <p><input type="text" id="field8" class="form-control " placeholder="Qualificattion">
+                <span id="alrt8" class="hide">Name is required</span></p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-1 ">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+   field1.addEventListener("blur",function () {
+                        this.value = this.value.trim()
+                if (!this.value && (this.type == "text" || this.type == "number") ) {
+                    alrt1.classList.remove("hide")
+                    this.classList.add("error")
+                    this.classList.remove("success")
+                }
+                else if (this.value && (this.type == "text" || this.type == "number")) {
+                    alrt1.classList.add("hide")
+                    this.classList.add("success")
+                    this.classList.remove("error")
+                }
+            }
+    )
+   field2.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt2.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt2.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field3.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt3.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt3.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field4.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt4.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt4.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field5.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt5.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt5.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field6.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt6.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt6.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field7.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt7.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt7.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+   field8.addEventListener("blur", function () {
+       this.value = this.value.trim()
+               if (!this.value && (this.type == "text" || this.type == "number") ) {
+                   alrt8.classList.remove("hide")
+                   this.classList.add("error")
+                   this.classList.remove("success")
+               }
+               else if (this.value && (this.type == "text" || this.type == "number")) {
+                   alrt8.classList.add("hide")
+                   this.classList.add("success")
+                   this.classList.remove("error")
+               }
+           }
+   )
+
+
+        submit.addEventListener("click",function(e){
+            e.preventDefault()
+              for(var j=0; j< form1.elements.length; j++){
+                  var element = form1.elements[j]
+                  element.value = element.value.trim()
+                    if( (element.type == "text" || element.type == "number") && element.value){
+                        element.classList.add("success")
+                        element.classList.remove("error")
+                    }
+                  else if(!element.value){
+                        element.classList.remove("success")
+                        element.classList.add("error")
+                    }
+              }
+        })
+
+
+</script>
+
+
+</body>
+</html>
